@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+ 	<!-- 配置能够产生connection的connectionfactory，由JMS对应的服务厂商提供 -->
+    <bean id="tagertConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+        <constructor-arg name="brokerURL" value="tcp://127.0.0.1:61616"/>
+    </bean>
+    <!-- 配置spring管理真正connectionfactory的connectionfactory，相当于spring对connectionfactory的一层封装 -->
+    <bean id="connectionFactory" class="org.springframework.jms.connection.SingleConnectionFactory">
+        <property name="targetConnectionFactory" ref="tagertConnectionFactory"/>
+    </bean>
+    <!-- 配置生产者 -->
+    <!-- Spring使用JMS工具类，可以用来发送和接收消息 -->
+    <bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+        <!-- 这里是配置的spring用来管理connectionfactory的connectionfactory -->
+        <property name="connectionFactory" ref="connectionFactory"/>
+    </bean>
+    <!-- 配置destination -->
+    <!-- 队列目的地 -->
+    <bean id="queueDestination" class="org.apache.activemq.command.ActiveMQQueue">
+        <constructor-arg value="spring-queue"/>
+    </bean>
+    <!-- 话题目的地 -->
+    <bean id="itemAddTopic" class="org.apache.activemq.command.ActiveMQTopic">
+        <constructor-arg value="item-add-topic"/>
+    </bean>
+    
+        <!-- 配置监听器 -->
+    <bean id="myListener" class="com.lhm.listener.Mylistener"/>
+    <!-- 系统监听器 -->
+<!--    <bean class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+        <property name="connectionFactory" ref="connectionFactory"/>
+        <property name="destination" ref="queueDestination"/>
+        <property name="messageListener" ref="myListener"/>
+    </bean> -->
+    <bean class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+        <property name="connectionFactory" ref="connectionFactory"/>
+        <property name="destination" ref="itemAddTopic"/>
+        <property name="messageListener" ref="myListener"/>
+    </bean>
+</beans>
