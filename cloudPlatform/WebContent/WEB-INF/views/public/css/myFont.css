@@ -1,0 +1,16 @@
+@font-face {
+font-family: FZCYSJW;
+src: url('/cloud/font/FZCYSJW.TTF'); /* IE9+,可以是具体的实际链接 */
+}
+@font-face {
+font-family: TRENDS;
+src: url('/cloud/font/trends.ttf'); /* IE9+,可以是具体的实际链接 */
+}
+
+.FZCYSJW {
+    font-family: FZCYSJW;
+}
+
+.TRENDS {
+	font-family: TRENDS;
+}

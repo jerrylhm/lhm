@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+    <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:jdbc="http://www.springframework.org/schema/jdbc"  
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:util="http://www.springframework.org/schema/util" xmlns:task="http://www.springframework.org/schema/task" xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+		http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd
+		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-4.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.0.xsd">          
+        
+        <!-- 开启包扫描-->
+        <context:component-scan base-package="com.creator.common.util"></context:component-scan>
+        <context:component-scan base-package="com.creator.db"></context:component-scan>
+        <bean id="dataSource" class = "com.alibaba.druid.pool.DruidDataSource">
+           <property name="driverClassName" value="com.mysql.jdbc.Driver" />  
+            <property name="url" value="jdbc:mysql://localhost:3306/cloud?useUnicode=true&amp;characterEncoding=UTF8"/>        
+            <property name="username" value="root"/>  
+            <property name="password" value="root" />  
+            <!-- 最大并发连接数 -->  
+            <property name = "maxActive" value = "300" />  
+            <!-- 初始化连接数量 -->  
+            <property name = "initialSize" value = "30" />
+        </bean>
+	      <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		     <property name="dataSource" ref="dataSource"></property>
+		 </bean>
+		 
+		 <!-- 配置JedisPoolConfig实例 -->
+    <bean id="poolConfig" class="redis.clients.jedis.JedisPoolConfig">
+        <property name="maxIdle" value="300" />
+        <property name="maxTotal" value="600" />
+        <property name="maxWaitMillis" value="1000" />
+        <property name="testOnBorrow" value="true" />
+    </bean>
+    
+    <bean id="jedisPool" class="redis.clients.jedis.JedisPool">
+		<constructor-arg index="0" ref="poolConfig" />
+		<constructor-arg index="1" value="127.0.0.1" type="java.lang.String"/>
+		<constructor-arg index="2" value="6379" type="int" />
+	</bean>
+    <!-- 配置JedisConnectionFactory -->
+    <bean id="jedisConnectionFactory"
+        class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory">
+        <property name="hostName" value="127.0.0.1" />
+        <property name="port" value="6379" />
+        <property name="poolConfig" ref="poolConfig" />
+        <property name="usePool" value="true"/>
+    </bean>
+
+    <!-- 配置RedisTemplate -->
+    <bean id="template" class="org.springframework.data.redis.core.RedisTemplate">   
+        <property name="connectionFactory"   ref="jedisConnectionFactory" />  
+        <property name="keySerializer">   
+            <bean class="org.springframework.data.redis.serializer.StringRedisSerializer" />   
+        </property>      
+        <property name="valueSerializer">   
+            <bean class="org.springframework.data.redis.serializer.JdkSerializationRedisSerializer" />   
+        </property>   
+        <property name="hashKeySerializer">     
+           <bean class="org.springframework.data.redis.serializer.StringRedisSerializer"/>     
+        </property>   
+        <property name="hashValueSerializer">   
+           <bean class="org.springframework.data.redis.serializer.JdkSerializationRedisSerializer"/>     
+        </property>  
+     </bean>
+    </beans>   
