@@ -1,0 +1,193 @@
+2018-08-27 10:53:04,817 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@7e55ee2e: startup date [Mon Aug 27 10:53:04 CST 2018]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | WrapperSimpleAppMain
+2018-08-27 10:53:05,638 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\apache-activemq-5.15.0\bin\win64\..\..\data\kahadb] | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-08-27 10:53:06,430 | INFO  | PListStore:[D:\apache-activemq-5.15.0\bin\win64\..\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | WrapperSimpleAppMain
+2018-08-27 10:53:06,581 | INFO  | Apache ActiveMQ 5.15.0 (localhost, ID:DESKTOP-RM27V4P-52083-1535338386440-0:1) is starting | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-08-27 10:53:06,610 | INFO  | Listening for connections at: tcp://DESKTOP-RM27V4P:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-08-27 10:53:06,615 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-08-27 10:53:06,622 | INFO  | Listening for connections at: amqp://DESKTOP-RM27V4P:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-08-27 10:53:06,624 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-08-27 10:53:06,632 | INFO  | Listening for connections at: stomp://DESKTOP-RM27V4P:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-08-27 10:53:06,636 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-08-27 10:53:06,643 | INFO  | Listening for connections at: mqtt://DESKTOP-RM27V4P:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-08-27 10:53:06,647 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-08-27 10:53:06,777 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@6281a88e{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | WrapperSimpleAppMain
+2018-08-27 10:53:06,865 | INFO  | Listening for connections at ws://DESKTOP-RM27V4P:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | WrapperSimpleAppMain
+2018-08-27 10:53:06,865 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-08-27 10:53:06,867 | INFO  | Apache ActiveMQ 5.15.0 (localhost, ID:DESKTOP-RM27V4P-52083-1535338386440-0:1) started | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-08-27 10:53:06,868 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-08-27 10:53:07,433 | INFO  | No Spring WebApplicationInitializer types detected on classpath | /admin | WrapperSimpleAppMain
+2018-08-27 10:53:07,679 | INFO  | ActiveMQ WebConsole available at http://0.0.0.0:8161/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2018-08-27 10:53:07,682 | INFO  | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2018-08-27 10:53:07,815 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | WrapperSimpleAppMain
+2018-08-27 10:53:08,016 | INFO  | No Spring WebApplicationInitializer types detected on classpath | /api | WrapperSimpleAppMain
+2018-08-27 10:53:08,449 | INFO  | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml | /api | WrapperSimpleAppMain
+2018-08-27 14:04:24,710 | WARN  | Transport Connection to: tcp://127.0.0.1:53148 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:53148@61616
+2018-08-27 14:05:23,343 | INFO  | Apache ActiveMQ 5.15.0 (localhost, ID:DESKTOP-RM27V4P-52083-1535338386440-0:1) is shutting down | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2018-08-27 14:05:23,353 | INFO  | Connector openwire stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2018-08-27 14:05:23,355 | INFO  | Connector amqp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2018-08-27 14:05:23,358 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2018-08-27 14:05:23,364 | INFO  | Connector mqtt stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2018-08-27 14:05:23,439 | INFO  | Connector ws stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2018-08-27 14:05:23,521 | INFO  | PListStore:[D:\apache-activemq-5.15.0\bin\win64\..\..\data\localhost\tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | ActiveMQ ShutdownHook
+2018-08-27 14:05:23,522 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2018-08-27 14:05:23,524 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2018-08-27 14:05:23,525 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2018-08-27 14:05:23,855 | INFO  | Apache ActiveMQ 5.15.0 (localhost, ID:DESKTOP-RM27V4P-52083-1535338386440-0:1) uptime 3 hours 12 minutes | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2018-08-27 14:05:23,858 | INFO  | Apache ActiveMQ 5.15.0 (localhost, ID:DESKTOP-RM27V4P-52083-1535338386440-0:1) is shutdown | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2018-08-27 14:05:23,861 | INFO  | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@7e55ee2e: startup date [Mon Aug 27 10:53:04 CST 2018]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | ActiveMQ ShutdownHook
+2018-08-27 14:05:23,892 | INFO  | Destroying Spring FrameworkServlet 'dispatcher' | /admin | ActiveMQ ShutdownHook
+2018-08-27 14:17:48,240 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@7b36eab3: startup date [Mon Aug 27 14:17:48 CST 2018]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | WrapperSimpleAppMain
+2018-08-27 14:17:48,935 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\apache-activemq-5.15.0\bin\win64\..\..\data\kahadb] | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-08-27 14:17:49,119 | INFO  | KahaDB is version 6 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-08-27 14:17:49,145 | INFO  | Recovering from the journal @1:74715 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-08-27 14:17:49,193 | INFO  | Recovery replayed 1666 operations from the journal in 0.062 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-08-27 14:17:49,211 | INFO  | PListStore:[D:\apache-activemq-5.15.0\bin\win64\..\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | WrapperSimpleAppMain
+2018-08-27 14:17:49,364 | INFO  | Apache ActiveMQ 5.15.0 (localhost, ID:DESKTOP-RM27V4P-56537-1535350669221-0:1) is starting | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-08-27 14:17:49,447 | INFO  | Listening for connections at: tcp://DESKTOP-RM27V4P:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-08-27 14:17:49,449 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-08-27 14:17:49,453 | INFO  | Listening for connections at: amqp://DESKTOP-RM27V4P:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-08-27 14:17:49,454 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-08-27 14:17:49,459 | INFO  | Listening for connections at: stomp://DESKTOP-RM27V4P:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-08-27 14:17:49,461 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-08-27 14:17:49,466 | INFO  | Listening for connections at: mqtt://DESKTOP-RM27V4P:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-08-27 14:17:49,468 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-08-27 14:17:49,545 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@accd00d{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | WrapperSimpleAppMain
+2018-08-27 14:17:49,588 | INFO  | Listening for connections at ws://DESKTOP-RM27V4P:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | WrapperSimpleAppMain
+2018-08-27 14:17:49,589 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-08-27 14:17:49,590 | INFO  | Apache ActiveMQ 5.15.0 (localhost, ID:DESKTOP-RM27V4P-56537-1535350669221-0:1) started | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-08-27 14:17:49,591 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-08-27 14:17:50,047 | INFO  | No Spring WebApplicationInitializer types detected on classpath | /admin | WrapperSimpleAppMain
+2018-08-27 14:17:50,139 | INFO  | ActiveMQ WebConsole available at http://0.0.0.0:8161/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2018-08-27 14:17:50,139 | INFO  | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2018-08-27 14:17:50,205 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | WrapperSimpleAppMain
+2018-08-27 14:17:50,364 | INFO  | No Spring WebApplicationInitializer types detected on classpath | /api | WrapperSimpleAppMain
+2018-08-27 14:17:50,600 | INFO  | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml | /api | WrapperSimpleAppMain
+2018-08-27 14:53:04,599 | WARN  | Transport Connection to: tcp://127.0.0.1:57737 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57737@61616
+2018-08-27 14:53:09,822 | WARN  | Transport Connection to: tcp://127.0.0.1:56563 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:56563@61616
+2018-08-27 14:53:12,213 | WARN  | Transport Connection to: tcp://127.0.0.1:56565 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:56565@61616
+2018-08-27 14:53:20,926 | WARN  | Transport Connection to: tcp://127.0.0.1:57538 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57538@61616
+2018-08-27 14:53:25,383 | WARN  | Transport Connection to: tcp://127.0.0.1:57789 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57789@61616
+2018-08-27 14:53:29,983 | WARN  | Transport Connection to: tcp://127.0.0.1:57821 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57821@61616
+2018-08-27 16:08:54,297 | WARN  | Transport Connection to: tcp://127.0.0.1:65306 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:65306@61616
+2018-08-27 16:08:54,297 | WARN  | Transport Connection to: tcp://127.0.0.1:65305 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:65305@61616
+2018-08-27 16:11:52,043 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@7b36eab3: startup date [Mon Aug 27 16:11:52 CST 2018]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | WrapperSimpleAppMain
+2018-08-27 16:11:52,726 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\apache-activemq-5.15.0\bin\win64\..\..\data\kahadb] | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-08-27 16:11:52,891 | INFO  | KahaDB is version 6 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-08-27 16:11:52,925 | INFO  | Recovering from the journal @1:494883 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-08-27 16:11:52,963 | INFO  | Recovery replayed 1318 operations from the journal in 0.051 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-08-27 16:11:52,973 | INFO  | PListStore:[D:\apache-activemq-5.15.0\bin\win64\..\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | WrapperSimpleAppMain
+2018-08-27 16:11:53,120 | INFO  | Apache ActiveMQ 5.15.0 (localhost, ID:DESKTOP-RM27V4P-49304-1535357512984-0:1) is starting | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-08-27 16:11:53,213 | INFO  | Listening for connections at: tcp://DESKTOP-RM27V4P:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-08-27 16:11:53,215 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-08-27 16:11:53,219 | INFO  | Listening for connections at: amqp://DESKTOP-RM27V4P:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-08-27 16:11:53,220 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-08-27 16:11:53,224 | INFO  | Listening for connections at: stomp://DESKTOP-RM27V4P:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-08-27 16:11:53,226 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-08-27 16:11:53,230 | INFO  | Listening for connections at: mqtt://DESKTOP-RM27V4P:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-08-27 16:11:53,232 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-08-27 16:11:53,314 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@3f8c130f{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | WrapperSimpleAppMain
+2018-08-27 16:11:53,355 | INFO  | Listening for connections at ws://DESKTOP-RM27V4P:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | WrapperSimpleAppMain
+2018-08-27 16:11:53,356 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-08-27 16:11:53,357 | INFO  | Apache ActiveMQ 5.15.0 (localhost, ID:DESKTOP-RM27V4P-49304-1535357512984-0:1) started | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-08-27 16:11:53,359 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-08-27 16:11:53,750 | INFO  | No Spring WebApplicationInitializer types detected on classpath | /admin | WrapperSimpleAppMain
+2018-08-27 16:11:53,900 | INFO  | ActiveMQ WebConsole available at http://0.0.0.0:8161/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2018-08-27 16:11:53,900 | INFO  | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2018-08-27 16:11:53,960 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | WrapperSimpleAppMain
+2018-08-27 16:11:54,120 | INFO  | No Spring WebApplicationInitializer types detected on classpath | /api | WrapperSimpleAppMain
+2018-08-27 16:11:54,375 | INFO  | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml | /api | WrapperSimpleAppMain
+2018-08-27 16:13:51,345 | WARN  | Transport Connection to: tcp://127.0.0.1:49346 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49346@61616
+2018-08-27 17:16:24,962 | WARN  | Transport Connection to: tcp://127.0.0.1:60900 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:60900@61616
+2018-08-27 17:16:28,731 | WARN  | Transport Connection to: tcp://127.0.0.1:60759 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:60759@61616
+2018-08-27 17:20:14,292 | WARN  | Transport Connection to: tcp://127.0.0.1:61001 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:61001@61616
+2018-08-27 17:31:47,180 | WARN  | Transport Connection to: tcp://127.0.0.1:61364 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:61364@61616
+2018-08-27 17:31:51,390 | WARN  | Transport Connection to: tcp://127.0.0.1:61346 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:61346@61616
+2018-08-27 17:34:06,739 | WARN  | Transport Connection to: tcp://127.0.0.1:62849 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62849@61616
+2018-08-27 17:34:06,739 | WARN  | Transport Connection to: tcp://127.0.0.1:62848 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62848@61616
+2018-08-27 17:43:12,357 | WARN  | Transport Connection to: tcp://127.0.0.1:63076 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:63076@61616
+2018-08-27 17:43:12,357 | WARN  | Transport Connection to: tcp://127.0.0.1:63075 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:63075@61616
+2018-08-27 18:00:35,110 | WARN  | Transport Connection to: tcp://127.0.0.1:49447 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49447@61616
+2018-08-28 09:16:55,512 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@7b36eab3: startup date [Tue Aug 28 09:16:55 CST 2018]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | WrapperSimpleAppMain
+2018-08-28 09:16:56,210 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\apache-activemq-5.15.0\bin\win64\..\..\data\kahadb] | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-08-28 09:16:56,432 | INFO  | KahaDB is version 6 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-08-28 09:16:56,465 | INFO  | Recovering from the journal @1:1598343 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-08-28 09:16:56,477 | INFO  | Recovery replayed 317 operations from the journal in 0.027 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-08-28 09:16:56,486 | INFO  | PListStore:[D:\apache-activemq-5.15.0\bin\win64\..\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | WrapperSimpleAppMain
+2018-08-28 09:16:56,613 | INFO  | Apache ActiveMQ 5.15.0 (localhost, ID:DESKTOP-RM27V4P-50403-1535419016495-0:1) is starting | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-08-28 09:16:56,713 | INFO  | Listening for connections at: tcp://DESKTOP-RM27V4P:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-08-28 09:16:56,714 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-08-28 09:16:56,718 | INFO  | Listening for connections at: amqp://DESKTOP-RM27V4P:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-08-28 09:16:56,720 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-08-28 09:16:56,724 | INFO  | Listening for connections at: stomp://DESKTOP-RM27V4P:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-08-28 09:16:56,727 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-08-28 09:16:56,731 | INFO  | Listening for connections at: mqtt://DESKTOP-RM27V4P:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-08-28 09:16:56,733 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-08-28 09:16:56,818 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@6e9ff894{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | WrapperSimpleAppMain
+2018-08-28 09:16:56,871 | INFO  | Listening for connections at ws://DESKTOP-RM27V4P:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | WrapperSimpleAppMain
+2018-08-28 09:16:56,872 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-08-28 09:16:56,874 | INFO  | Apache ActiveMQ 5.15.0 (localhost, ID:DESKTOP-RM27V4P-50403-1535419016495-0:1) started | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-08-28 09:16:56,875 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-08-28 09:16:57,408 | INFO  | No Spring WebApplicationInitializer types detected on classpath | /admin | WrapperSimpleAppMain
+2018-08-28 09:16:57,511 | INFO  | ActiveMQ WebConsole available at http://0.0.0.0:8161/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2018-08-28 09:16:57,511 | INFO  | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2018-08-28 09:16:57,599 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | WrapperSimpleAppMain
+2018-08-28 09:16:57,751 | INFO  | No Spring WebApplicationInitializer types detected on classpath | /api | WrapperSimpleAppMain
+2018-08-28 09:16:58,006 | INFO  | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml | /api | WrapperSimpleAppMain
+2018-08-28 16:11:57,994 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@7b36eab3: startup date [Tue Aug 28 16:11:57 CST 2018]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | WrapperSimpleAppMain
+2018-08-28 16:11:58,713 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\activemq\kahadb] | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-08-28 16:11:59,392 | INFO  | PListStore:[D:\activemq\activemqB\bin\win64\..\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | WrapperSimpleAppMain
+2018-08-28 16:11:59,539 | INFO  | Apache ActiveMQ 5.15.0 (localhost, ID:DESKTOP-RM27V4P-61484-1535443919408-0:1) is starting | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-08-28 16:11:59,554 | INFO  | Listening for connections at: tcp://DESKTOP-RM27V4P:61617?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-08-28 16:11:59,555 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-08-28 16:11:59,557 | INFO  | Establishing network connection from vm://localhost to tcp://127.0.0.1:61616 | org.apache.activemq.network.DiscoveryNetworkConnector | WrapperSimpleAppMain
+2018-08-28 16:11:59,622 | INFO  | Connector vm://localhost started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-08-28 16:11:59,634 | INFO  | Network Connector DiscoveryNetworkConnector:network_a:BrokerService[localhost] started | org.apache.activemq.network.NetworkConnector | WrapperSimpleAppMain
+2018-08-28 16:11:59,636 | INFO  | Apache ActiveMQ 5.15.0 (localhost, ID:DESKTOP-RM27V4P-61484-1535443919408-0:1) started | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-08-28 16:11:59,637 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-08-28 16:11:59,665 | INFO  | Network connection between vm://localhost#0 and tcp:///127.0.0.1:61616@61485 (localhost) has been established. | org.apache.activemq.network.DemandForwardingBridgeSupport | triggerStartAsyncNetworkBridgeCreation: remoteBroker=tcp:///127.0.0.1:61616@61485, localBroker= vm://localhost#0
+2018-08-28 16:12:00,270 | INFO  | No Spring WebApplicationInitializer types detected on classpath | /admin | WrapperSimpleAppMain
+2018-08-28 16:12:00,357 | INFO  | ActiveMQ WebConsole available at http://0.0.0.0:8162/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2018-08-28 16:12:00,358 | INFO  | ActiveMQ Jolokia REST API available at http://0.0.0.0:8162/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2018-08-28 16:12:00,426 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | WrapperSimpleAppMain
+2018-08-28 16:12:00,580 | INFO  | No Spring WebApplicationInitializer types detected on classpath | /api | WrapperSimpleAppMain
+2018-08-28 16:12:00,833 | INFO  | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml | /api | WrapperSimpleAppMain
+2018-08-28 16:18:43,189 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@7e55ee2e: startup date [Tue Aug 28 16:18:43 CST 2018]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | WrapperSimpleAppMain
+2018-08-28 16:18:43,904 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\activemq\kahadb] | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-08-28 16:18:43,915 | INFO  | Database D:\activemq\kahadb\lock is locked by another server. This broker is now in slave mode waiting a lock to be acquired | org.apache.activemq.store.SharedFileLocker | WrapperSimpleAppMain
+2018-08-28 16:27:14,138 | INFO  | KahaDB is version 6 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-08-28 16:27:14,167 | INFO  | Recovering from the journal @1:55595 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-08-28 16:27:14,170 | INFO  | Recovery replayed 37 operations from the journal in 0.016 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-08-28 16:27:14,180 | INFO  | PListStore:[D:\activemq\activemqB\bin\win64\..\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | WrapperSimpleAppMain
+2018-08-28 16:27:14,310 | INFO  | Apache ActiveMQ 5.15.0 (localhost, ID:DESKTOP-RM27V4P-61865-1535444834190-0:1) is starting | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-08-28 16:27:14,405 | INFO  | Listening for connections at: tcp://DESKTOP-RM27V4P:61617?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-08-28 16:27:14,406 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-08-28 16:27:14,408 | INFO  | Establishing network connection from vm://localhost to tcp://127.0.0.1:61616 | org.apache.activemq.network.DiscoveryNetworkConnector | WrapperSimpleAppMain
+2018-08-28 16:27:14,438 | INFO  | Connector vm://localhost started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-08-28 16:27:14,455 | INFO  | Network Connector DiscoveryNetworkConnector:network_a:BrokerService[localhost] started | org.apache.activemq.network.NetworkConnector | WrapperSimpleAppMain
+2018-08-28 16:27:14,456 | INFO  | Apache ActiveMQ 5.15.0 (localhost, ID:DESKTOP-RM27V4P-61865-1535444834190-0:1) started | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-08-28 16:27:14,458 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-08-28 16:27:14,463 | INFO  | Network connection between vm://localhost#0 and tcp:///127.0.0.1:61616@61866 (localhost) has been established. | org.apache.activemq.network.DemandForwardingBridgeSupport | triggerStartAsyncNetworkBridgeCreation: remoteBroker=tcp:///127.0.0.1:61616@61866, localBroker= vm://localhost#0
+2018-08-28 16:27:14,991 | INFO  | No Spring WebApplicationInitializer types detected on classpath | /admin | WrapperSimpleAppMain
+2018-08-28 16:27:15,098 | INFO  | ActiveMQ WebConsole available at http://0.0.0.0:8162/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2018-08-28 16:27:15,098 | INFO  | ActiveMQ Jolokia REST API available at http://0.0.0.0:8162/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2018-08-28 16:27:15,168 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | WrapperSimpleAppMain
+2018-08-28 16:27:15,349 | INFO  | No Spring WebApplicationInitializer types detected on classpath | /api | WrapperSimpleAppMain
+2018-08-28 16:27:15,611 | INFO  | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml | /api | WrapperSimpleAppMain
+2018-08-28 16:47:13,791 | WARN  | Transport Connection to: tcp://127.0.0.1:61923 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:61923@61617
+2018-08-28 17:53:58,469 | WARN  | Network connection between vm://localhost#0 and tcp:///127.0.0.1:61616@61866 shutdown due to a remote error: {} | org.apache.activemq.network.DemandForwardingBridgeSupport | ActiveMQ Transport: tcp:///127.0.0.1:61616@61866
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)[:1.8.0_171]
+	at java.net.SocketInputStream.read(Unknown Source)[:1.8.0_171]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50)[activemq-client-5.15.0.jar:5.15.0]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634)[activemq-client-5.15.0.jar:5.15.0]
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59)[activemq-client-5.15.0.jar:5.15.0]
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619)[activemq-client-5.15.0.jar:5.15.0]
+	at java.io.DataInputStream.readInt(Unknown Source)[:1.8.0_171]
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268)[activemq-client-5.15.0.jar:5.15.0]
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240)[activemq-client-5.15.0.jar:5.15.0]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232)[activemq-client-5.15.0.jar:5.15.0]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215)[activemq-client-5.15.0.jar:5.15.0]
+	at java.lang.Thread.run(Unknown Source)[:1.8.0_171]
+2018-08-28 17:53:58,470 | WARN  | Transport Connection to: tcp://127.0.0.1:61872 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:61872@61617
+2018-08-28 17:53:58,487 | INFO  | Connector vm://localhost stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ BrokerService[localhost] Task-8
+2018-08-28 17:53:58,489 | INFO  | localhost bridge to localhost stopped | org.apache.activemq.network.DemandForwardingBridgeSupport | ActiveMQ BrokerService[localhost] Task-8
