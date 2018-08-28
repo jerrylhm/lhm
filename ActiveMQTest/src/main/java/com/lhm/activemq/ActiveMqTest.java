@@ -18,9 +18,13 @@ import org.apache.activemq.ActiveMQConnectionFactory;
 
 public class ActiveMqTest implements Runnable{
 	
+		private String producerUrl = "failover:(tcp://127.0.0.1:61617,tcp://127.0.0.1:61618)?randomize=false"; 
+		private String ConsumerUrl = "failover:(tcp://127.0.0.1:61616,tcp://127.0.0.1:61617,tcp://127.0.0.1:61618)?randomize=false";
+		
+		
 	   public void testMQProducerQueue() throws Exception{
 	        //1、创建工厂连接对象，需要制定ip和端口号
-	        ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://127.0.0.1:61616");
+	        ConnectionFactory connectionFactory = new ActiveMQConnectionFactory(producerUrl);
 	        //2、使用连接工厂创建一个连接对象
 	        Connection connection = connectionFactory.createConnection();
 	        //3、开启连接
@@ -45,7 +49,7 @@ public class ActiveMqTest implements Runnable{
 	   
 	    public void TestMQConsumerQueue(final String id) throws Exception{
 	        //1、创建工厂连接对象，需要制定ip和端口号
-	        ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://127.0.0.1:61616");
+	        ConnectionFactory connectionFactory = new ActiveMQConnectionFactory(ConsumerUrl);
 	        //2、使用连接工厂创建一个连接对象
 	        Connection connection = connectionFactory.createConnection();
 	        //3、开启连接
@@ -84,7 +88,7 @@ public class ActiveMqTest implements Runnable{
 	    //topic生产者测试
 	    public void TestTopicProducer() throws Exception{
 	        //1、创建工厂连接对象，需要制定ip和端口号
-	        ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://127.0.0.1:61616");
+	        ConnectionFactory connectionFactory = new ActiveMQConnectionFactory(producerUrl);
 	        //2、使用连接工厂创建一个连接对象
 	        Connection connection = connectionFactory.createConnection();
 	        //3、开启连接
@@ -107,7 +111,7 @@ public class ActiveMqTest implements Runnable{
 	    
 	    public void TestTopicConsumer() throws Exception{
 	        //1、创建工厂连接对象，需要制定ip和端口号
-	        ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://127.0.0.1:61616");
+	        ConnectionFactory connectionFactory = new ActiveMQConnectionFactory(ConsumerUrl);
 	        //2、使用连接工厂创建一个连接对象
 	        Connection connection = connectionFactory.createConnection();
 	        //3、开启连接
@@ -147,8 +151,8 @@ public class ActiveMqTest implements Runnable{
 	    public static void main(String[] args) throws Exception {
 	    	ActiveMqTest test = new ActiveMqTest();
 	    	//队列测试
-	    	test.testMQProducerQueue();
-//	    	test.TestMQConsumerQueue("1");
+//	    	test.testMQProducerQueue();
+	    	test.TestMQConsumerQueue("1");
 //	    	test.TestMQConsumerQueue("2");
 	    	
 	    	//主题测试
