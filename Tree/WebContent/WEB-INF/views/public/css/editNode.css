@@ -1,0 +1,34 @@
+
+.line {
+height: auto;
+} 
+iframe {
+  border: none;
+}
+.ztree li span.value-icon {
+background-image: url(../zTree/css/zTreeStyle/img/diy/data.png);
+}
+.ztree li span.permission-icon {
+background-image: url(../zTree/css/zTreeStyle/img/diy/9.png);
+}
+.ztree li span.editUrl-icon {
+background-image: url(../zTree/css/zTreeStyle/img/diy/forward.png);
+}
+.ztree li span.protocol-icon {
+background-image: url(../zTree/css/zTreeStyle/img/diy/protocol.png);
+}
+.searchable-select-dropdown {
+  z-index:100;
+}
+.attr-name {
+  font-size: 10px;color: #a4a5a7;font-weight: 500;
+}
+.attr-value {
+  font-size: 10px;color: #131212;
+}
+.template-item1-model,.template-item2-model,.template-option-model,.add-scene-model,.update-scene-model {
+  display: none;
+}
+.loading {
+  display: none;
+}

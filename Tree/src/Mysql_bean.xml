@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+    <beans xmlns="http://www.springframework.org/schema/beans"  
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   
+        xsi:schemaLocation="http://www.springframework.org/schema/beans  
+        http://www.springframework.org/schema/beans/spring-beans-3.1.xsd ">          
+        
+        <bean id="dataSource" class = "com.alibaba.druid.pool.DruidDataSource">
+           <property name="driverClassName" value="com.mysql.jdbc.Driver" />  
+            <property name="url" value="jdbc:mysql://localhost:3306/tree?useUnicode=true&amp;characterEncoding=UTF8"/>        
+            <property name="username" value="root"/>  
+            <property name="password" value="root" />  
+            <!-- 最大并发连接数 -->  
+            <property name = "maxActive" value = "300" />  
+            <!-- 初始化连接数量 -->  
+            <property name = "initialSize" value = "30" />
+        </bean>
+		 <bean id="userDao" class="com.creator.db.user.UserDaoImp">
+            <property name="dataSource" ref="dataSource"></property>
+        </bean> 
+        <bean id="treeDao" class="com.creator.db.tree.TreeDaoImp">
+            <property name="dataSource" ref="dataSource"></property>
+        </bean> 
+        <bean id="permissionDao" class="com.creator.db.permission.PermissionDaoImp">
+            <property name="dataSource" ref="dataSource"></property>
+        </bean> 
+        <bean id="valueDao" class="com.creator.db.value.ValueDaoImp">
+            <property name="dataSource" ref="dataSource"></property>
+        </bean> 
+        <bean id="userHandleDao" class="com.creator.db.userhandle.UserHandleImpl">
+            <property name="dataSource" ref="dataSource"></property>
+        </bean> 
+        <bean id="typeDao" class="com.creator.db.type.TypeDaoImpl">
+            <property name="dataSource" ref="dataSource"></property>
+        </bean> 
+        <bean id="userGroupDao" class="com.creator.db.group.UserGroupDaoImp">
+            <property name="dataSource" ref="dataSource"></property>
+        </bean>
+        <bean id="templateDao" class="com.creator.db.template.TemplateDaoImpl">
+            <property name="dataSource" ref="dataSource"></property>
+        </bean> 
+        <bean id="tpContentDao" class="com.creator.db.tpcontent.TPContentImpl">
+            <property name="dataSource" ref="dataSource"></property>
+        </bean> 
+        <bean id="sceneDao" class="com.creator.db.scene.SceneDaoImpl">
+            <property name="dataSource" ref="dataSource"></property>
+        </bean> 
+        <bean id="clientPermissionDao" class="com.creator.db.clientpermission.ClientPermissionDaoImp">
+            <property name="dataSource" ref="dataSource"></property>
+        </bean> 
+        <bean id="userGroupPermissionDao" class="com.creator.db.groupPermission.UserGroupPermissionDaoImp">
+            <property name="dataSource" ref="dataSource"></property>
+        </bean> 
+        
+        <bean id="meetingDao" class="com.creator.db.meeting.MeetingDaoImp">
+            <property name="dataSource" ref="dataSource"></property>
+        </bean>
+        <bean id="confereeDao" class="com.creator.db.conferee.ConfereeDaoImp">
+            <property name="dataSource" ref="dataSource"></property>
+        </bean> 
+        
+        <bean id="nodeAttrDao" class="com.creator.db.nodeattr.NodeAttrDaoImp">
+            <property name="dataSource" ref="dataSource"></property>
+        </bean> 
+        
+        <bean id="hostDao" class="com.creator.db.host.HostDaoImp">
+            <property name="dataSource" ref="dataSource"></property>
+        </bean> 
+        
+    </beans>  
