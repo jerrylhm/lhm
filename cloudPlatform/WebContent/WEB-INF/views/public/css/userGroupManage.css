@@ -1,0 +1,171 @@
+@CHARSET "UTF-8";
+/**
+ *  用户组管理
+ */
+ .content {
+	padding: 40px 80px;
+	display: flex;
+	color: #666;
+}
+
+ .box {
+ 	flex-shrink: 0;
+	width: 400px;
+	background-color: white;
+	flex-direction: column;
+	border-radius: 5px;
+	min-height: 625px;
+	max-height: 825px;
+	
+ }
+
+ .box-group {
+ 	box-shadow: 3px 5px 15px #E1E1E1;
+ }
+ 
+.box-header {
+	border-bottom: 1px solid #37AE87;
+	font-weight: bold;
+	display: flex;
+	padding: 12px 15px;
+	height: 45px;
+	justify-content: space-between;
+}
+
+.box-header-title {
+	flex-direction: column;
+	font-size: 15px;
+	border-left: 4px solid #37AE87;
+	padding-left: 10px;
+	line-height: 20px;
+}
+
+.box-content {
+	padding: 15px 30px;
+}
+.box-content>div>.btn {
+	margin-right: 12px;
+}
+
+.group-container {
+}
+
+.group-list-wrapper {
+	width: 230px;
+	font-size: 13px;
+	margin-top: 15px;
+}
+
+.active {
+	background-color:#5bc0de;
+	color: white;
+}
+
+.active:hover {
+	background-color: #46b8da !important;
+	color: white;
+}
+.dd-item .close {
+	z-index: 999;
+}
+
+.group-tip {
+	background: url("../images/no-data.png");
+	width: 150px;
+	height: 150px;
+	background-size: 100% 100%;
+	margin-top: 50px;
+}
+
+/**************************分页样式**********************************/
+.group-page {
+	text-align: center;
+}
+
+.pagination .page-first>a {
+	border-top-left-radius: 4px !important;
+	border-bottom-left-radius: 4px !important;
+}
+
+.pagination .page-last>a {
+	border-top-right-radius: 4px !important;
+	border-bottom-right-radius: 4px !important;
+}
+
+/**************************应用*******************************************/
+.app-container {
+	margin-left: 50px;
+}
+
+.dd-success .dd-item {
+	cursor: pointer;
+}
+.dd-success .dd2-content {
+	color: rgb(129, 168, 123);
+	padding-left: 20px;
+}
+
+.activesuccess {
+	background-color:#5cb85c ;
+	color: white !important;
+}
+
+.activesuccess:hover {
+	background-color: #4cae4c!important;
+	color: white;
+}
+
+/***********************权限面板*******************************/
+.box-permission {
+	margin-left: 80px;
+	width: 700px;
+	box-shadow: box-shadow: 3px 5px 15px #E1E1E1;
+}
+
+.table-wrapper {
+	margin-top:20px;
+	max-height: 600px;
+	overflow: auto;
+}
+
+.text-block {
+	display: inline-block;
+	padding: 2px 7px;
+	color: white;
+	background-color: #5FB878;
+	border-radius: 3px;
+}
+
+.tip-img {
+	background: url("../images/no-data.png");
+	width: 230px;
+	height: 230px;
+	background-size: 100% 100%;
+	margin: auto; 
+	margin-top: 100px;
+	
+}
+
+.text-block-danger {
+	background-color: #dd2c0e;
+}
+
+.danger {
+	background-color: #dd2c0e;
+}
+
+/********************表格样式*********************************/
+.table-permission td,th{
+	text-align: center;
+}
+
+
+/******************修改ace样式*************************/
+input[type=checkbox].ace.ace-switch.ace-switch-4 + .lbl::before {
+	content: "ON\a0\a0\a0\a0\a0\a0\a0\a0OFF" !important;
+}
+
+input[type=checkbox].ace.ace-switch.ace-switch-4:checked + .lbl-success::before {
+	background-color: #5FB878;
+	border-color: #5FB878;
+}

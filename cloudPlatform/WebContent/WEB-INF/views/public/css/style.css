@@ -1,0 +1,158 @@
+@CHARSET "UTF-8";
+body {
+	color: #9EA7B3;
+	min-width: 1000px;
+	font-family: "微软雅黑";
+}
+
+.bread {
+	height: 51px;
+	background-color: rgba(238,238,238,0.67);
+	padding: 15px 0 5px 20px;
+	border-bottom: 1px solid #ebebeb;
+}
+
+.bread-container span,i {
+	padding-left: 5px;
+	padding-right: 5px;
+	cursor: pointer;
+}
+
+/*******************用户审核********************************/
+.gray-bg {
+    background-color: #ffffff;
+}
+
+.ibox {
+	margin-top:20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+  /*  border: 1px solid #dee5e7;*/
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.wrapper-content {
+    padding: 20px;
+}
+.wrapper {
+    padding: 0 20px;
+}
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    z-index: 100;
+}
+
+.ibox-title {
+    height: 50px;
+    border: 1px solid #dddddd;
+   /* border-color: #edf1f2;*/
+    background-color: #f6f8f8;
+    color: #333;
+    font-weight: 700;
+    border-radius: 2px 2px 0 0;
+    padding: 15px 15px 3px 15px;
+    border-bottom: 1px solid #3498DB;
+    display: block;
+    clear: both;
+}
+
+h3, h4, h5 {
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.ibox-title h5 {
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 0 7px;
+    padding: 0;
+    text-overflow: ellipsis;
+    float: left;
+}
+
+.ibox-tools {
+    display: inline-block;
+    float: right;
+    margin-top: 0;
+    position: relative;
+    padding: 0;
+}
+
+.ibox-tools a {
+    cursor: pointer;
+    margin-left: 5px;
+    color: #c4c4c4;
+}
+
+.head-image{
+	width: 80px;
+	height: 40px;
+	
+}
+
+td{
+	font-size: 13px;
+	color: #393939;
+}
+
+.page-tool{
+	height: 50px;
+	line-height: 50px;
+	display: flex;
+	align-items:center;
+	justify-content:space-between;
+	background-color: white;
+	border: 1px solid #dddddd;
+	border-top: none;
+}
+
+.table-bordered{
+	margin-bottom: 0px;
+	background-color: white;
+}
+
+.date-input{
+	border: 1px solid #AACFEC !important;
+	height: 34px !important;
+	background-image: url("../images/icon.png");
+	background-repeat: no-repeat !important;
+    background-position: right center !important;
+    background-color: #fff!important;
+    width: 230px !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+}
+
+.sel{
+	line-height: 45px;
+	font-size: 13px;
+	font-weight: normal;
+	color: #666666;
+	font-family: "宋体";
+	margin-left: 30px;
+}
+
+.sel:HOVER {
+	text-decoration: none;
+	color: #3498DB;
+	cursor: pointer;
+}
+
+.active{
+	color: #3498DB;
+}
+
+.btn{
+	padding: 4px 8px;
+	font-size: 13px;
+	
+}
