@@ -1,0 +1,5 @@
+com\lhm\dto\AdDto.class
+com\lhm\entity\Ad.class
+com\lhm\entity\Page.class
+com\lhm\controller\ApiController.class
+com\lhm\entity\BaseBean.class
