@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.lhm.dao.AdDao;
 import com.lhm.dto.AdDto;
 import com.lhm.entity.Ad;
+import com.lhm.entity.Page;
 
 @RestController
 @RequestMapping("/api")
@@ -33,12 +34,15 @@ public class ApiController {
 	
 	@RequestMapping(value = "/homead/{id}/{type}", method = RequestMethod.GET,produces="text/html; charset=UTF-8")
 	public String search(@PathVariable("id") int id, @PathVariable("type") String type) {
-		System.out.println(adDAO.findById(1));
-		Ad ad = new Ad();
-		ad.setTitle("faker");
-		System.out.println(adDAO.insert(ad));
+		Page page = new Page();
+		page.setPageNumber(2);
+		page.setCurrentPage(2);
+		System.out.println(adDAO.queryByLike("a", page));
+//		Ad ad = new Ad();
+//		ad.setTitle("faker");
+//		System.out.println(adDAO.insert(ad));
 		//添加完数据后mybits自动把自增id填入
-		System.out.println(ad.getId());
+//		System.out.println(ad.getId());
 		return "草泥马的比";
 	}
 

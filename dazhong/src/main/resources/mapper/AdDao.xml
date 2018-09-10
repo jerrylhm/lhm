@@ -3,10 +3,15 @@
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper	namespace="com.lhm.dao.AdDao">
-	<select id="findById" parameterType="java.lang.Integer" resultType="Ad">
+	<select id="findById"  resultType="Ad">
 		SELECT * FROM ad WHERE id=#{id}
 	</select>
-	
+	<select id="query"  resultType="Ad">
+		SELECT * FROM ad
+	</select>
+	<select id="queryByLike"  resultType="Ad">
+		SELECT * FROM ad WHERE title LIKE "%"#{title}"%"
+	</select>
 	<insert id="insert" parameterType="Ad" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
 		INSERT INTO ad(title) VALUES(#{title})
 	</insert>
