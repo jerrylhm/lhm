@@ -8,7 +8,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
+import com.lhm.constant.HandleEnum;
 import com.lhm.dao.AdDao;
 import com.lhm.dto.AdDto;
 import com.lhm.entity.Ad;
@@ -46,4 +48,16 @@ public class ApiController {
 		return "草泥马的比";
 	}
 
+	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
+	public String delete(@PathVariable("id") int id) {
+		System.out.println("即将删除的id:" + id);
+		return "草泥马的比";
+	}
+	
+	@RequestMapping(value = "/{id}", method = RequestMethod.PUT)
+	public String put(@PathVariable("id") int id,MultipartFile file) {
+		System.out.println("即将修改的id:" + id);
+		System.out.println("即将上传的文件名:" + file.getOriginalFilename());
+		return "草泥马的比";
+	}
 }

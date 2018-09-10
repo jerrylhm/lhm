@@ -13,5 +13,33 @@
 </head>
 <body>
 <h2>Hello World!</h2>
+<form action="/dazhong/api/1" method="post">
+	<input type="hidden" name="_method" value="DELETE">
+	<input type="submit" value="DELETE提交">
+</form>
+
+<form action="/dazhong/api/1" method="post" enctype="multipart/form-data">
+	<input type="hidden" name="_method" value="PUT">
+	<input type="file" name="file" value="文件">
+	<input id="put" type="submit" value="PUT提交">
+</form>
+<script type="text/javascript" src="/dazhong/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+$("#put1").on("click",function(){
+    $.ajax({
+        url: "/dazhong/api/2",
+        type : "post",
+        data : {
+            _method : "put",
+        },
+        success : function(data){
+            
+        },
+        dataType : "json",
+        error : function(data){
+        }
+    })
+});
+</script>
 </body>
 </html>
