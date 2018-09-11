@@ -23,6 +23,7 @@
 	<input type="file" name="file" value="文件">
 	<input id="put" type="submit" value="PUT提交">
 </form>
+
 <script type="text/javascript" src="/dazhong/jquery-3.2.1.min.js"></script>
 <script type="text/javascript">
 $("#put1").on("click",function(){
@@ -39,6 +40,32 @@ $("#put1").on("click",function(){
         error : function(data){
         }
     })
+});
+
+var common = {};
+
+common.ajax = function(param) {
+	var ajaxParam = $.extend({timeout:1000},
+			{complete:function() {
+				console.log('必定执行')
+			}},
+			param);
+	
+	$.ajax(ajaxParam);
+}
+
+common.ajax({
+    url: "/dazhong/api/2",
+    type : "post",
+    data : {
+        _method : "delete",
+    },
+    success : function(data){
+        
+    },
+    dataType : "json",
+    error : function(data){
+    }
 });
 </script>
 </body>

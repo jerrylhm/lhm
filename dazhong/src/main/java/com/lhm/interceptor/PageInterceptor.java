@@ -1,12 +1,10 @@
 package com.lhm.interceptor;
 
 import java.lang.reflect.Field;
-import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.Properties;
-import java.util.function.BiConsumer;
 
 import org.apache.ibatis.binding.MapperMethod.ParamMap;
 import org.apache.ibatis.executor.parameter.ParameterHandler;
@@ -77,7 +75,7 @@ public class PageInterceptor implements Interceptor{
                 	page.setTotalNumber(count);
                 }
               //-----------------------------------------
-                
+
               //------第二步生成分页sql并替换掉boundSql的sql------
                 String pageSql = boundSql.getSql() + " LIMIT " + page.getPageNumber() * (page.getCurrentPage() - 1) + "," + page.getPageNumber();
                 setAttr(boundSql.getClass(), "sql", boundSql, pageSql);
@@ -156,6 +154,7 @@ public class PageInterceptor implements Interceptor{
 			if(field.getName().equals(fieldName)) {
 				field.setAccessible(true);
 				field.set(obj, value);
+				
 				return true;
 			}
 		}
