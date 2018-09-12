@@ -3,6 +3,8 @@ package com.lhm.controller;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -51,20 +53,21 @@ public class ApiController {
 	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
 	public String delete(@PathVariable("id") int id) {
 		System.out.println("即将删除的id:" + id);
-		return "草泥马的比";
+		return "返回值";
 	}
 	
 	@RequestMapping(value = "/{id}", method = RequestMethod.PUT)
 	public String put(@PathVariable("id") int id,MultipartFile file) {
 		System.out.println("即将修改的id:" + id);
 		System.out.println("即将上传的文件名:" + file.getOriginalFilename());
-		return "草泥马的比";
+		return "返回值";
 	}
 	
 	@RequestMapping(value = "/adList/{page.currentPage}", method = RequestMethod.GET)
-	public String adList(Page page) {
+	public String adList(HttpServletRequest request,Page page) {
 		System.out.println(adDAO.query(page));
-		return "草泥马的比";
+		System.out.println(request.getHeader("x-requested-with"));
+		return "返回值";
 	}
 	
 	public static void main(String[] args) {

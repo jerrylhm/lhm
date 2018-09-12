@@ -24,6 +24,8 @@
 	<input id="put" type="submit" value="PUT提交">
 </form>
 
+<iframe src="/dazhong/forware"></iframe>
+
 <script type="text/javascript" src="/dazhong/jquery-3.2.1.min.js"></script>
 <script type="text/javascript">
 $("#put1").on("click",function(){
@@ -55,10 +57,10 @@ common.ajax = function(param) {
 }
 
 common.ajax({
-    url: "/dazhong/api/2",
-    type : "post",
+    url: "/dazhong/api/adList/1",
+    type : "get",
     data : {
-        _method : "delete",
+//         _method : "delete",
     },
     success : function(data){
         
