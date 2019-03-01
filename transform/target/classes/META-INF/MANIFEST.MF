@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: transform
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: 实习生.李海明
+Implementation-Vendor-Id: com.lhm
+Build-Jdk: 1.8.0_171
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/transform
+Created-By: Maven Integration for Eclipse
+

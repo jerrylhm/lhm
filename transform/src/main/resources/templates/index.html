@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>RTSP转RTMP测试</h1>
+<input id="rtsp1" placeholder="请输入rtsp流地址">
+<input id="rtmp1" placeholder="请输入rtmp流地址">
+<button class="submit" data-id="1" >提交</button>
+<button class="stop" data-id="1" >停止</button>
+<input id="rtsp2" placeholder="请输入rtsp流地址">
+<input id="rtmp2" placeholder="请输入rtmp流地址">
+<button class="submit" data-id="2">提交</button>
+<button class="stop" data-id="2" >停止</button>
+<input id="rtsp3" placeholder="请输入rtsp流地址">
+<input id="rtmp3" placeholder="请输入rtmp流地址">
+<button class="submit" data-id="3">提交</button>
+<button class="stop" data-id="3" >停止</button>
+<script type="text/javascript" src="/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+$('.submit').on('click', function() {
+	var id = $(this).attr('data-id');
+	var rtsp= $('#rtsp' + id).val();
+	var rtmp = $('#rtmp' + id).val();
+	$.ajax({
+		url:"/transform",
+		dataType:'json',
+		type:"get",
+		contentType: "application/x-www-form-urlencoded;charset=UTF-8",
+		data:{rtsp:rtsp,rtmp:rtmp,id:id},
+		success:function(result){
+
+		}
+	});
+})
+
+$('.stop').on('click', function() {
+	var id = $(this).attr('data-id');
+	$.ajax({
+		url:"/destroy",
+		dataType:'json',
+		type:"get",
+		contentType: "application/x-www-form-urlencoded;charset=UTF-8",
+		data:{id:id},
+		success:function(result){
+
+		}
+	});
+})
+</script>
+</body>
+</html>
